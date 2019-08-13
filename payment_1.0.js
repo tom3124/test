@@ -2526,7 +2526,7 @@ function setccValue(id,event) {
     
 function submitForm(){
 	$(".Dnipop").hide();
-	var frm = $('form#booking');
+	var frm = $("form#booking");
 	var contCode = $("#Payments_Country").val();
 	 if((contCode == 'US' || contCode == 'CA') && $("#payment_state").val() == 0 && frm.valid() == true){
 		$("#payment_state").focus();
